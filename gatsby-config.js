@@ -3,7 +3,7 @@ module.exports = {
     title: `Muhammad Syafrizal`,
     name: `Syafrizal`,
     siteUrl: `http://localhost:8000`,
-    description: `Frontend Developer who Studied in Yogyakarta`,
+    description: ``,
     hero: {
       heading: `It’s a nice to meet you here 👋`,
       headingBlog: `Beberapa tulisan yang mungkin menarik untuk dibaca.`,
