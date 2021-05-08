@@ -42,11 +42,14 @@ const Footer: React.FC<{}> = () => {
   const { name, social } = results.allSite.edges[0].node.siteMetadata;
 
   const copyrightDate = (() => {
-    const { edges } = results.allMdx;
-    const years = [0, edges.length - 1].map((edge) =>
-      new Date(edges[edge].node.frontmatter.date).getFullYear()
-    );
-    return years[0] === years[1] ? `${years[0]}` : `${years[0]}–${years[1]}`;
+    // const { edges } = results.allMdx;
+    // const years = [0, edges.length - 1].map((edge) =>
+    //   new Date(edges[edge].node.frontmatter.date).getFullYear()
+    // );
+    // return years[0] === years[1] ? `${years[0]}` : `${years[0]}–${years[1]}`;
+    const d = new Date();
+    const n = d.getFullYear();
+    return n;
   })();
 
   return (
@@ -56,7 +59,7 @@ const Footer: React.FC<{}> = () => {
         <HoritzontalRule />
         <FooterContainer>
           <FooterText>
-            © {copyrightDate} {name}
+            © {copyrightDate} Built with ♥ in both of Purwokerto & Yogyakarta
           </FooterText>
           <div>
             <SocialLinks links={social} />

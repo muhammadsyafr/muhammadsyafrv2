@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from '@emotion/styled';
 
+import SEO from "@narative/gatsby-theme-novela/src/components/SEO";
 import Section from '@components/Section';
 import Bio from '@components/Bio';
 import Icons from '@icons';
@@ -46,9 +47,12 @@ const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
 
   return (
     <Section relative id="Articles__Hero">
+       <SEO
+      title={"Muhammad Syafrizal's Blog"}
+    />
       <HeadingContainer style={{ maxWidth: `${hero.maxWidth}px` }}>
         <Bio author={featuredAuthor} />
-        <HeroHeading dangerouslySetInnerHTML={{ __html: hero.headingBlog }} />
+        <HeroHeading style={{fontFamily: 'Poppins'}} dangerouslySetInnerHTML={{ __html: hero.headingBlog }} />
       </HeadingContainer>
       <SubheadingContainerOne>
         <GridControlsContainer>
@@ -78,24 +82,6 @@ const ArticlesHero: React.FC<IAuthor> = ({ authors }) => {
 
 export default ArticlesHero;
 
-const SubheadingContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 100px;
-
-  ${mediaqueries.desktop`
-    margin-bottom: 80px;
-  `};
-
-  ${mediaqueries.tablet`
-    margin-bottom: 60px;
-  `};
-
-  ${mediaqueries.phablet`
-    display: none;
-  `};
-`;
 
 const SubheadingContainerOne = styled.div`
   display: flex;
@@ -108,7 +94,7 @@ const SubheadingContainerOne = styled.div`
   `};
 
   ${mediaqueries.tablet`
-    margin-bottom: 60px;
+    margin-bottom: 0px;
   `};
 `;
 
@@ -134,6 +120,7 @@ const HeadingContainer = styled.div`
 
   ${mediaqueries.tablet`
     width: 100%;
+    margin: 64px 0 50px 0;
   `}
 `;
 

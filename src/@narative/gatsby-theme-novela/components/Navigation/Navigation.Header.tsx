@@ -135,7 +135,8 @@ const NavigationHeader: React.FC<{}> = () => {
             </button>
           ) : (
             <>
-              <Link to="/blog" style={{color: '#73737D'}}> Blog </Link>
+              <a href="https://linktr.ee/muhammadsyafr" style={{color: '#73737D'}} target="_blank" rel="noopener noreferrer"> Contact </a>
+              <Link to="/blog" style={{color: '#73737D', marginLeft: '12%'}}> Blog </Link>
               <DarkModeToggle />
             </>
           )}
@@ -341,7 +342,7 @@ const MoonOrSun = styled.div<{ isDark: boolean }>`
 
 const MoonMask = styled.div<{ isDark: boolean }>`
   position: absolute;
-  right: -1px;
+  right: -8px;
   top: -8px;
   height: 24px;
   width: 24px;

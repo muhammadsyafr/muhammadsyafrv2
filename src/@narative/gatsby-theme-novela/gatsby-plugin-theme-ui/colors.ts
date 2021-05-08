@@ -1,13 +1,15 @@
-import prism from "./prism";
+import prism from "@narative/gatsby-theme-novela/src/gatsby-plugin-theme-ui/prism";
 
 export default {
   prism,
 
+  description: "#808191",
+  buttonHero: "rgb(240, 240, 240);",
   primary: "#000",
   secondary: "#73737D",
   grey: "#73737D",
   background: "#fafafa",
-  accent: "#6166DC",
+  accent: "#73737D",
   hover: "rgba(0, 0, 0, 0.07)",
   gradient: "linear-gradient(180deg, rgba(217, 219, 224, 0) 0%, #D9DBE0 100%)",
   articleText: "#08080B",
@@ -21,6 +23,8 @@ export default {
   inputBackground: "rgba(0, 0, 0, 0.05)",
   modes: {
     dark: {
+      description: "#808191",
+      buttonHero: "transparent",
       grey: "#73737D",
       primary: "#fff",
       secondary: "#fff",

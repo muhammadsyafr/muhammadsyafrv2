@@ -12,24 +12,16 @@ module.exports = {
     siteImg: `https://syafrizal.netlify.app/static/5bb3c2f4f3f22057ad8d196fa9bb7329/a2f5d/saprol.png`,
     social: [
       {
-        name: `twitter`,
-        url: `https://twitter.com/narative`,
-      },
-      {
         name: `github`,
-        url: `https://github.com/narative`,
+        url: `https://github.com/muhammadsyafr`,
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        url: `https://instagram.com/muhammadsyafr`,
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        url: `https://www.linkedin.com/in/muhammadsyafr`,
       },
     ],
   },
@@ -56,7 +48,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/assets/syafrizal.png`,
+        icon: `src/assets/favicon.png`,
       },
     },
     {

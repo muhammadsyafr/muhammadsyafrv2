@@ -13,7 +13,7 @@ const Bio: React.FC<IAuthor> = ({ author }) => {
         aria-label="Author's bio"
       >
         <BioAvatarInner>
-          <RoundedImage style={author.style} src={author.avatar.medium} />
+          <RoundedImage style={author.style} src={author.avatar.small} />
         </BioAvatarInner>
       </BioAvatar>
     </BioContainer>
@@ -39,30 +39,30 @@ const BioAvatar = styled.div`
   margin-right: 16px;
   margin: 10px 26px 10px 10px;
 
-  // &::after {
-  //   content: '';
-  //   position: absolute;
-  //   left: -10px;
-  //   top: -10px;
-  //   width: 64px;
-  //   height: 64px;
-  //   border-radius: 50%;
-  //   border: 1px solid rgba(0, 0, 0, 0.25);
-  // }
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+  }
 
-  // &[data-a11y='true']:focus::after {
-  //   content: '';
-  //   position: absolute;
-  //   left: -10px;
-  //   top: -10px;
-  //   width: 64px;
-  //   height: 64px;
-  //   border: 2px solid ${p => p.theme.colors.accent};
-  // }
+  &[data-a11y='true']:focus::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    width: 64px;
+    height: 64px;
+    border: 2px solid ${p => p.theme.colors.accent};
+  }
 `;
 
 const RoundedImage = styled(Image)`
-  border-radius: 50%;
+  // border-radius: 50%;
 `;
 
 const BioAvatarInner = styled.div`

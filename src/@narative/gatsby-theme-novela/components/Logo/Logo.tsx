@@ -8,7 +8,7 @@ import { Icon } from '@types';
 const Logo: Icon = ({ fill = "white" }) => {
   return (
     <LogoContainer>
-      <LogoText dangerouslySetInnerHTML={{ __html: 'Muhammad Syafrizal' }} />
+      <LogoText dangerouslySetInnerHTML={{ __html: 'Syafrizal' }} />
     </LogoContainer>
   );
 };
@@ -35,6 +35,8 @@ const LogoText = styled.p`
   max-width: 430px;
   font-size: 16px;
   font-weight: bold;
-  line-height: 1.45;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
   color: ${p => p.theme.colors.accent};
+ 
 `;

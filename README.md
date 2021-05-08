@@ -20,8 +20,10 @@ or
 npm install
 ```
 
-### Step 2: Develop & Build
+### Step 2: Copy Library
+if all packages are installed on your machine dont forget to replace @narative in node_modules with @narative in this repository
 
+### Step 3: Develop & Build
 Once installed or cloned locally and all packages are installed you can begin developing your site.
 
 ```sh
